@@ -5,8 +5,10 @@ import axios from "axios";
 
 
 const Login = () => {
-  const Client_ID_Git = ''
-  const Client_ID_Google = ''
+  const Client_ID_Git = process.env.REACT_APP_GITHUB_CLIENT_ID
+  const Client_ID_Google = process.env.REACT_APP_GOOGLE_CLIENT_ID
+
+  console.log(Client_ID_Git);
 
   const [tokenNeeded, Settokenvar] = useState("");
   const [userDetails, setUserDetails] = useState(null);

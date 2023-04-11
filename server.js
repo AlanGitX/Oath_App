@@ -1,5 +1,12 @@
-const CLIENT_ID = ""
-const CLIENT_SECRET = ""
+require('dotenv').config()
+console.log(process.env)
+
+
+const CLIENT_ID = process.env.REACT_APP_GITHUB_CLIENT_ID
+const CLIENT_SECRET = process.env.REACT_APP_GITHUB_CLIENT_SECRET
+
+console.log(CLIENT_ID);
+
 
 const axios = require('axios');
 
